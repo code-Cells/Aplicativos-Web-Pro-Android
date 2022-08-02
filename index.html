@@ -8,21 +8,8 @@
     <p>Lorem ipsum dolor sit amet ... </p>
         
     <h5>Start Ad-Placer!</h5>
-    <input type="submit" value="Orientation checker" onclick="submit()">
-    <script type="text/javascript">
-        function submit() {
-            var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4) {
-                    alert(xhr.response);
-                }
-            }
-            xhr.open('get', 'https://github.com/code-Cells/Aplicativos-Web-Pro-Android/orientation-checker.html', true);
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-            xhr.send();
-        }
-
-    </script>
-
+    <form action="https://github.com/code-Cells/Aplicativos-Web-Pro-Android/orientation-checker.html" method="get">
+        <input type="submit" value="Orientation checker">
+    </form> 
 </body>
 </html>
